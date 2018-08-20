@@ -1,0 +1,75 @@
+.enableBootstrap{
+  @import './bootstrap';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.selectContainer{
+  margin: 10px;
+}
+
+select{
+  min-width: 80px;
+  height: 30px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+
+select:focus{
+  outline: none;
+}
+.selectLabel{
+  float: left;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mainRow{
+  width: 90%;
+}
+.columnLeft{
+  border-right: 2px solid black;
+}
+.endRowOptions{
+  border-bottom: 1px solid black;
+}
+.compareButton{
+  float: right;
+}
+.targetListCompareButton select{
+  float: left;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.resultContainer{
+  display: flex;
+  align-content: center;
+}
+
+.resultTable{
+  width: 800px;
+}
+
+.resultTable > thead > tr > th{
+  text-align: center;
+}
+.resultTable > thead > tr > th:nth-child(1), .resultTable > thead > tr > th:nth-child(3),
+.resultTable > tbody > tr > td:nth-child(1), .resultTable > tbody > tr > td:nth-child(3){
+  width: 370px;
+}
+.resultTable > thead > tr > th:nth-child(2), .resultTable > tbody > tr > td:nth-child(2){
+  width: 60px;
+}
